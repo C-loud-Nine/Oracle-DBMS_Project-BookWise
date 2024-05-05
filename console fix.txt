@@ -1,0 +1,92 @@
+COLUMN book_id FORMAT 9999
+COLUMN title FORMAT A50
+COLUMN author FORMAT A50
+COLUMN genre_id FORMAT 9999
+COLUMN price FORMAT 999.99
+COLUMN publication_date FORMAT A10
+
+SELECT * FROM Books;
+
+COLUMN customer_id FORMAT 9999
+COLUMN name FORMAT A20
+COLUMN email FORMAT A30
+COLUMN phone_number FORMAT A15
+COLUMN address FORMAT A30
+
+SELECT * FROM Customers;
+
+COLUMN genre_id FORMAT 9999
+COLUMN name FORMAT A50
+
+SELECT * FROM Genre;
+
+COLUMN inventory_id FORMAT 9999
+COLUMN book_id FORMAT 9999
+COLUMN quantity FORMAT 9999
+COLUMN available FORMAT A10
+
+SELECT * FROM Inventory;
+
+COLUMN sale_id FORMAT 9999
+COLUMN customer_id FORMAT 9999
+COLUMN book_id FORMAT 9999
+COLUMN sale_date FORMAT A10
+COLUMN total_price FORMAT 999.99
+COLUMN employee_id FORMAT 9999
+
+SELECT * FROM Sales;
+
+COLUMN order_id FORMAT 9999
+COLUMN customer_id FORMAT 9999
+COLUMN book_id FORMAT 9999
+COLUMN order_date FORMAT A10
+COLUMN quantity FORMAT 9999
+
+SELECT * FROM Orders;
+
+COLUMN employee_id FORMAT 9999
+COLUMN name FORMAT A30
+COLUMN email FORMAT A30
+COLUMN phone_number FORMAT A15
+COLUMN position FORMAT A20
+COLUMN hire_date FORMAT A12
+
+SELECT * FROM Employees;
+
+COLUMN author_id FORMAT 9999
+COLUMN name FORMAT A50
+COLUMN nationality FORMAT A50
+COLUMN birth_date FORMAT A10
+COLUMN death_date FORMAT A10
+
+SELECT * FROM Authors;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SELECT * FROM Books;
+
+SELECT * FROM Customers;
+
+SELECT * FROM Genre;
+
+SELECT * FROM Inventory;
+
+SELECT * FROM Sales;
+
+SELECT * FROM Orders;
+
+SELECT * FROM Employees;
+
+SELECT * FROM Authors;
+

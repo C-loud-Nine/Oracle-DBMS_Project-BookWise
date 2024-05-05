@@ -1,0 +1,83 @@
++-------------+            +--------------+
+|   Books     |            |   Genre      |
++-------------+            +--------------+
+| book_id (PK)|            | genre_id (PK)|
+| title       |            | name         |
+| author      |            +--------------+
+| genre_id (FK)-------+
+| price       |       |
+| publication_date     |
++-------------+       |
+      |              |
+      |              |
+      |              |
++-------------+       |
+|  Inventory  |       |
++-------------+       |
+| inventory_id|       |
+| book_id (FK)--------+
+| quantity    |
+| available   |
++-------------+
+      |
+      |
+      |
++-------------+
+|   Sales     |
++-------------+
+| sale_id (PK)|
+| customer_id (FK)----+
+| book_id (FK)--------+
+| sale_date   |       |
+| total_price |       |
+| employee_id (FK)----+
++-------------+
+      |
+      |
+      |
++-------------+
+|  Customers  |
++-------------+
+| customer_id (PK)|
+| name        |
+| email       |
+| phone_number|
+| address     |
++-------------+
+      |
+      |
+      |
++-------------+
+|  Employees  |
++-------------+
+| employee_id (PK)|
+| name        |
+| email       |
+| phone_number|
+| position    |
+| hire_date   |
++-------------+
+      |
+      |
+      |
++-------------+
+|   Order     |
++-------------+
+| order_id (PK)   |
+| customer_id (FK)|
+| book_id (FK)    |
+| order_date      |
+| quantity        |
++-------------+
+      |
+      |
+      |
++-------------+
+|   Authors   |
++-------------+
+| author_id (PK) |
+| name           |
+| nationality    |
+| birth_date     |
+| death_date     |
++-------------+
